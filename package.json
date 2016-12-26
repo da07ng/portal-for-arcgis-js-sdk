@@ -1,0 +1,22 @@
+{
+  "name": "portal-for-arcgis-js-sdk",
+  "version": "0.0.1",
+  "description": "Portal(for ArcGIS) SDK for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/da07ng/portal-for-arcgis-js-sdk.git"
+  },
+  "author": "Daojing Gao <me@gaodaojing.com>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/da07ng/portal-for-arcgis-js-sdk/issues"
+  },
+  "homepage": "https://github.com/da07ng/portal-for-arcgis-js-sdk#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
