@@ -1,21 +1,20 @@
-import 'isomorphic-fetch'
+import axios from 'axios';
 
-import { serializeParams } from '../util'
+import { serializeParams } from '../util/common';
 
 /**
  * Generate Token
- * @param {string} username - username
- * @param {string} password - password
- * @param {string} client - client type. exp: referer/ip
- * @param {string} ip - ip address if client is ip
- * @param {string} referer - referer address if client id referer
- * @param {string} expiration - Set expiration of the token
- * @returns {Promise}
+ * @param  {[type]} username   [description]
+ * @param  {[type]} password   [description]
+ * @param  {[type]} client     referer/ip
+ * @param  {[type]} ip         [description]
+ * @param  {[type]} referer    [description]
+ * @param  {[type]} expiration [description]
+ * @return {[type]}            [description]
  */
 function generateToken(username, password, client, ip, referer, expiration) {
-  let portal = this
-  let url = `${portal.portalUrl}sharing/rest/generateToken`
-
+  let portal = this;
+  let url = `${portal.portalUrl}/arcgis/sharing/rest/generateToken`;
   let params = {
     username: username,
     password: password,
@@ -24,15 +23,15 @@ function generateToken(username, password, client, ip, referer, expiration) {
     referer: referer,
     expiration: expiration,
     f: 'json'
-  }
+  };
 
-  return fetch(url, {
-    method: 'POST',
+  return axios(url, {
+    method: 'post',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    body: serializeParams(params)
-  })
+    data: serializeParams(params)
+  });
 }
 
-export { generateToken }
+export { generateToken };

@@ -1,22 +1,29 @@
 {
-  "name": "portal-for-arcgis-js-sdk",
+  "name": "portal-for-arcgis-rest-js",
   "version": "0.0.1",
-  "description": "Portal(for ArcGIS) SDK for JavaScript",
+  "description": "JavaScript wrappers for the Portal for ArcGIS REST API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/da07ng/portal-for-arcgis-js-sdk.git"
+    "url": "git+https://github.com/da07ng/portal-for-arcgis-rest-js.git"
   },
-  "author": "Daojing Gao <me@gaodaojing.com>",
-  "license": "GPL-2.0",
+  "author": "da07ng <gaodaojing@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/da07ng/portal-for-arcgis-js-sdk/issues"
+    "url": "https://github.com/da07ng/portal-for-arcgis-rest-js/issues"
   },
-  "homepage": "https://github.com/da07ng/portal-for-arcgis-js-sdk#readme",
+  "homepage": "https://github.com/da07ng/portal-for-arcgis-rest-js#readme",
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1"
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "prettier-eslint-cli": "^4.7.1",
+    "standard": "^11.0.1"
   }
 }

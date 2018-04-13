@@ -1,1 +1,1 @@
-# portal-for-arcgis-js-sdk
+# portal-for-arcgis-rest-js
